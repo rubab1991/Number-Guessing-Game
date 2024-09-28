@@ -5,15 +5,7 @@ import { useState, useEffect, ChangeEvent } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
-// Type definition for the NumberGuessingComponent's state
-interface NumberGuessingState {
-  gameStarted: boolean;
-  gameOver: boolean;
-  paused: boolean;
-  targetNumber: number;
-  userGuess: number | string;
-  attempts: number;
-}
+// Remove the unused interface (NumberGuessingState) to fix the eslint error
 
 // Defining the NumberGuessingComponent function component
 export default function NumberGuessing(): JSX.Element {
